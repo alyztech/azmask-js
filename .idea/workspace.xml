@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e921eef0-ae8c-49e8-b2ad-17c9b0a28cc3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AzMaskFormatter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mask.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MaskType.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/azmask/azMask.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/azmask/azMask.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/drop/drop.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/drop/drop.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/drop/dropLast.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/drop/dropLast.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/drop/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/maskFactory/MaskFactory.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/maskFactory/MaskFactory.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/maskFactory/MaskFactoryType.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/textCache/UpdateCache.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/textCache/textCache.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/textCache/textCache.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/validateRegex/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/validateRegex/validateRegex.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/validateRegex/validateRegex.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.lint.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="JupyterTrust" id="4d9b7b89-32a3-48c7-9498-3f779eb14228" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2CfkIU0eIAgi9e2Pjbsm4TMjfit" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/caiomansho/Dev/alyz/react/azmask-js/src/textCache",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "/Users/caiomansho/Dev/alyz/react/azmask-js/node_modules/typescript/lib"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/textCache" />
+      <recent name="$PROJECT_DIR$/src/maskFactory" />
+      <recent name="$PROJECT_DIR$/src/validateRegex" />
+      <recent name="$PROJECT_DIR$/src/drop" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/azmask" />
+      <recent name="$PROJECT_DIR$/src/textCache" />
+      <recent name="$PROJECT_DIR$/src/validateRegex" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e921eef0-ae8c-49e8-b2ad-17c9b0a28cc3" name="Default Changelist" comment="" />
+      <created>1659200947629</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659200947629</updated>
+      <workItem from="1659200949411" duration="381000" />
+      <workItem from="1659201357367" duration="542000" />
+      <workItem from="1659201983229" duration="1119000" />
+      <workItem from="1659242887255" duration="26989000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
