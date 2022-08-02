@@ -11,15 +11,21 @@ function azMask(masks: Mask[]): AzMaskFormatter {
   masks.sort((a: Mask, b: Mask) => a.index - b.index);
   const cache: TextCache = textCache();
 
-  return function formatValue(text: string): string {
+  function formatValue(text: string): string {
     const cachedText = cache.getText();
     let result = '';
     let cleanResult = '';
     let index = 0;
     let maskIndex = 0;
+    console.log(masks);
+    console.log(cachedText);
 
     while (index < text.length && maskIndex < masks.length) {
       const mask = masks[maskIndex];
+
+      console.log('---------------------------------');
+      console.log(mask);
+      console.log(cachedText[index], text[index]);
 
       if (index < cachedText.length && cachedText[index] === text[index]) {
         result.concat(text[index]);
@@ -29,6 +35,7 @@ function azMask(masks: Mask[]): AzMaskFormatter {
         index += 1;
       } else if (mask.maskType === MaskType.REGEX) {
         const validatedIndex: number | null = validateRegex(text, mask.value, index);
+        console.log(`validatedIndex: ${validatedIndex}`);
         if (validatedIndex !== null) {
           result = result.concat(text[validatedIndex]);
           cleanResult = cleanResult.concat(text[validatedIndex]);
@@ -45,8 +52,10 @@ function azMask(masks: Mask[]): AzMaskFormatter {
       }
       maskIndex += 1;
     }
+    console.log(result);
     return cache.updateCache(result, cleanResult);
-  };
+  }
+  return { formatValue, cache };
 }
 
 export default azMask;

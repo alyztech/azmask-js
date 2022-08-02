@@ -34,6 +34,12 @@ test('AzMask works', () => {
     maskFactory.createMask(13),
   ];
   const maskFormatter = azMask(masks);
-  const result = maskFormatter('34775332830');
-  expect(result).toBe('347.753.328-30');
+  let formattedValue = maskFormatter.formatValue('34775332830');
+  expect(formattedValue).toBe('347.753.328-30');
+  expect(maskFormatter.cache.getCleanText()).toBe('34775332830');
+  expect(maskFormatter.cache.getText()).toBe('347.753.328-30');
+
+  formattedValue = maskFormatter.formatValue('07.44a2.741/0001-71');
+  expect(formattedValue).toBe('07.442.741/0001-71');
+  expect(maskFormatter.cache.getCleanText()).toBe('07442741000171');
 });

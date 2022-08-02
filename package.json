@@ -20,7 +20,8 @@
     "testDrop": "jest --coverage src/drop",
     "testMaskFactory": "jest --coverage src/maskFactory",
     "testTextCache": "jest --coverage src/textCache",
-    "testAzMask": "jest --coverage src/azmask",
+    "testAzMask": "jest --coverage src/azMask",
+    "testAzMaskGroup": "jest --coverage src/azMaskGroup",
     "testValidateRegex": "jest --coverage src/validateRegex"
   },
   "exports": {
