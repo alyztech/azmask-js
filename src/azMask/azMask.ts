@@ -20,26 +20,30 @@ function azMask(masks: Mask[]): AzMaskFormatter {
 
     while (index < text.length && maskIndex < masks.length) {
       const mask = masks[maskIndex];
-      if (index < cachedText.length
-        && cachedText[index] === text[index]
-        && mask.maskType === MaskType.REGEX
-      ) {
-        result = result.concat(cachedText[index]);
-        cleanResult = cleanResult.concat(text[index]);
-        index += 1;
-      } else if (mask.maskType === MaskType.REGEX) {
-        const validatedIndex: number | null = validateRegex(text, mask.value, index);
-        if (validatedIndex !== null) {
-          result = result.concat(text[validatedIndex]);
-          cleanResult = cleanResult.concat(text[validatedIndex]);
-          index = validatedIndex + 1;
+      const currentChar = text[index];
+
+      if (mask.maskType === MaskType.REGEX) {
+        if (index < cachedText.length && cachedText[index] === currentChar) {
+          result = result.concat(currentChar);
+          cleanResult = cleanResult.concat(currentChar);
+          index += 1;
         } else {
-          return cache.updateCache(result, cleanResult);
+          const validatedIndex: number | null = validateRegex(text, mask.value, index);
+          if (validatedIndex !== null) {
+            result = result.concat(text[validatedIndex]);
+            cleanResult = cleanResult.concat(text[validatedIndex]);
+            index = validatedIndex + 1;
+          } else {
+            return cache.updateCache(result, cleanResult);
+          }
         }
       } else {
-        if (index === text.length - 1 && text[index].toString() === mask.value) {
-          result = dropLast(result);
-          return cache.updateCache(result, cleanResult);
+        if (currentChar.toString() === mask.value) {
+          if (index === text.length - 1) {
+            result = dropLast(result);
+            return cache.updateCache(result, cleanResult);
+          }
+          index += 1;
         }
         result = result.concat(mask.value);
       }

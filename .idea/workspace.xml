@@ -24,6 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e921eef0-ae8c-49e8-b2ad-17c9b0a28cc3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/azMask/azMask.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/azMask/azMask.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/azMaskGroup/azMaskGroup.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/azMaskGroup/azMaskGroup.spec.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +95,7 @@
       <workItem from="1659200949411" duration="381000" />
       <workItem from="1659201357367" duration="542000" />
       <workItem from="1659201983229" duration="1119000" />
-      <workItem from="1659242887255" duration="50126000" />
+      <workItem from="1659242887255" duration="54192000" />
     </task>
     <servers />
   </component>
