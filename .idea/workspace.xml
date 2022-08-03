@@ -24,7 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e921eef0-ae8c-49e8-b2ad-17c9b0a28cc3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/azMask/azMask.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/azMask/azMask.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/azMaskGroup/azMaskGroup.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/azMaskGroup/azMaskGroup.spec.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,6 +65,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "/Users/caiomansho/Dev/alyz/react/azmask-js/node_modules/jest",
     "nodejs_package_manager_path": "yarn",
     "ts.external.directory.path": "/Users/caiomansho/Dev/alyz/react/azmask-js/node_modules/typescript/lib"
   }
@@ -84,6 +84,26 @@
       <recent name="$PROJECT_DIR$/src/validateRegex" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="AzMaskGroup works" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/azMaskGroup/azMaskGroup.spec.js" />
+      <test-names>
+        <test-name value="AzMaskGroup works" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.AzMaskGroup works" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -95,7 +115,7 @@
       <workItem from="1659200949411" duration="381000" />
       <workItem from="1659201357367" duration="542000" />
       <workItem from="1659201983229" duration="1119000" />
-      <workItem from="1659242887255" duration="54192000" />
+      <workItem from="1659242887255" duration="55195000" />
     </task>
     <servers />
   </component>

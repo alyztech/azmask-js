@@ -75,6 +75,7 @@ test('AzMaskGroup works', () => {
   let formattedValue = maskFormatter.formatValue('a711776a38011');
 
   expect(formattedValue).toBe('711.776.380-11');
+  expect(maskFormatter.cache.getCleanText()).toBe('71177638011');
 
   formattedValue = maskFormatter.formatValue('07.44a2.741/0001-71');
 
