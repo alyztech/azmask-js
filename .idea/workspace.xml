@@ -24,13 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e921eef0-ae8c-49e8-b2ad-17c9b0a28cc3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AzMaskFormatter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/AzMaskFormatter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/azMask/azMask.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/azMask/azMask.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/azMask/azMask.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/azMask/azMask.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/azMaskGroup/azMaskGroup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/azMaskGroup/azMaskGroup.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/textCache/UpdateCache.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/textCache/Cache.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/textCache/textCache.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/textCache/textCache.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/textCache/textCache.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/textCache/azMaskCache.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/azMaskGroup/azMaskGroup.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/azMaskGroup/azMaskGroup.spec.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +94,7 @@
       <workItem from="1659200949411" duration="381000" />
       <workItem from="1659201357367" duration="542000" />
       <workItem from="1659201983229" duration="1119000" />
-      <workItem from="1659242887255" duration="49921000" />
+      <workItem from="1659242887255" duration="50126000" />
     </task>
     <servers />
   </component>
