@@ -1,13 +1,13 @@
 import type { AzMaskFormatter } from '../AzMaskFormatter';
 import type { Mask } from '../Mask';
-import type { TextCache } from '../textCache/UpdateCache';
+import type { Cache } from '../textCache/Cache';
 import azMask from '../azMask/azMask';
-import textCache from '../textCache/textCache';
+import azMaskCache from '../textCache/azMaskCache';
 
 function azMaskGroup(masks: [Mask[]]): AzMaskFormatter {
   masks.sort((a, b) => (a.length - b.length));
   const azMasks: AzMaskFormatter[] = masks.map((e: Mask[]) => azMask(e));
-  const cache: TextCache = textCache();
+  const cache: Cache = azMaskCache();
 
   function formatValue(text: string): string {
     if (!text || cache.getText() === text) {

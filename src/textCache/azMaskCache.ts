@@ -1,9 +1,8 @@
-import type { TextCache } from './UpdateCache';
+import type { Cache } from './Cache';
 
-const textCache = (): TextCache => {
+const azMaskCache = (): Cache => {
   let text = '';
   let cleanText = '';
-
   const updateCache = (result: string, cleanResult: string): string => {
     text = result;
     cleanText = cleanResult;
@@ -11,8 +10,7 @@ const textCache = (): TextCache => {
   };
   const getText = () => text;
   const getCleanText = () => cleanText;
-
   return { updateCache, getText, getCleanText };
 };
 
-export default textCache;
+export default azMaskCache;

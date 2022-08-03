@@ -1,4 +1,4 @@
-import { TextCache } from './textCache/UpdateCache';
+import { Cache } from './textCache/Cache';
 
 /**
  * An interface that has the common formatting value behavior as the {@link azMask}
@@ -6,5 +6,5 @@ import { TextCache } from './textCache/UpdateCache';
  */
 export interface AzMaskFormatter {
   formatValue: (text: string) => string;
-  cache: TextCache;
+  cache: Cache;
 }
