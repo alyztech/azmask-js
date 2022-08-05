@@ -9,21 +9,22 @@ function azMaskGroup(masks: [Mask[]]): AzMaskFormatter {
   const azMasks: AzMaskFormatter[] = masks.map((e: Mask[]) => azMask(e));
   const cache: Cache = azMaskCache();
 
-  function formatValue(text: string): string {
-    if (!text || cache.getText() === text) {
-      return text;
+  function formatValue(text: string, func: (text: string, unmaskedText: string) => void): void {
+    if (!text || cache.getMaskedText() === text) {
+      func(text, cache.getUnmaskedText());
+      return;
     }
     cache.clean();
     azMasks.forEach((e) => {
-      const formatResult = e.formatValue(text);
-      if (cache.getCleanText().length < e.cache.getCleanText().length) {
-        cache.updateCache(formatResult, e.cache.getCleanText());
-      }
+      e.formatValue(text, (maskedText, unmaskedText) => {
+        if (cache.getUnmaskedText().length < unmaskedText.length) {
+          cache.updateCache(maskedText, unmaskedText);
+        }
+      });
     });
-    return cache.getText();
+    func(cache.getMaskedText(), cache.getUnmaskedText());
   }
-
-  return { formatValue, cache };
+  return { formatValue };
 }
 
 export default azMaskGroup;

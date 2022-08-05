@@ -1,21 +1,21 @@
 import type { Cache } from './Cache';
 
 const azMaskCache = (): Cache => {
-  let text = '';
-  let cleanText = '';
-  const updateCache = (result: string, cleanResult: string): string => {
-    text = result;
-    cleanText = cleanResult;
-    return text;
+  let maskedText = '';
+  let unmaskedText = '';
+  const updateCache = (newText: string, newUnmaskedText: string): string => {
+    maskedText = newText;
+    unmaskedText = newUnmaskedText;
+    return maskedText;
   };
   const clean = (): void => {
-    text = '';
-    cleanText = '';
+    maskedText = '';
+    unmaskedText = '';
   };
-  const getText = () => text;
-  const getCleanText = () => cleanText;
+  const getMaskedText = () => maskedText;
+  const getUnmaskedText = () => unmaskedText;
   return {
-    updateCache, getText, getCleanText, clean,
+    updateCache, getMaskedText, getUnmaskedText, clean,
   };
 };
 

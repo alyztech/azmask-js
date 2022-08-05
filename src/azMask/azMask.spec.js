@@ -34,11 +34,10 @@ test('AzMask CPF works', () => {
     maskFactory.createMask(13),
   ];
   const maskFormatter = azMask(masks);
-  const formattedValue = maskFormatter.formatValue('34775332830');
-
-  expect(formattedValue).toBe('347.753.328-30');
-  expect(maskFormatter.cache.getCleanText()).toBe('34775332830');
-  expect(maskFormatter.cache.getText()).toBe('347.753.328-30');
+  maskFormatter.formatValue('34775332830', (maskedText, unmaskedText) => {
+    expect(maskedText).toBe('347.753.328-30');
+    expect(unmaskedText).toBe('34775332830');
+  });
 });
 
 test('AzMask CNPJ works', () => {
@@ -82,7 +81,8 @@ test('AzMask CNPJ works', () => {
   ];
 
   const maskFormatter = azMask(masks);
-  const formattedValue = maskFormatter.formatValue('07.44a2.741/0001-71');
-  expect(formattedValue).toBe('07.442.741/0001-71');
-  expect(maskFormatter.cache.getCleanText()).toBe('07442741000171');
+  maskFormatter.formatValue('07.44a2.741/0001-71', (maskedText, unmaskedText) => {
+    expect(maskedText).toBe('07.442.741/0001-71');
+    expect(unmaskedText).toBe('07442741000171');
+  });
 });

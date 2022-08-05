@@ -72,17 +72,19 @@ test('AzMaskGroup works', () => {
   ];
 
   const maskFormatter = azMaskGroup([cpfMasks, cnpjMasks]);
-  let formattedValue = maskFormatter.formatValue('a711776a38011');
 
-  expect(formattedValue).toBe('711.776.380-11');
-  expect(maskFormatter.cache.getCleanText()).toBe('71177638011');
+  maskFormatter.formatValue('a711776a38011', (maskedText, unmaskedText) => {
+    expect(maskedText).toBe('711.776.380-11');
+    expect(unmaskedText).toBe('71177638011');
+  });
 
-  formattedValue = maskFormatter.formatValue('07.44a2.741/0001-71');
+  maskFormatter.formatValue('07.44a2.741/0001-71', (maskedText, unmaskedText) => {
+    expect(maskedText).toBe('07.442.741/0001-71');
+    expect(unmaskedText).toBe('07442741000171');
+  });
 
-  expect(formattedValue).toBe('07.442.741/0001-71');
-  expect(maskFormatter.cache.getCleanText()).toBe('07442741000171');
-
-  formattedValue = maskFormatter.formatValue('a711776a38011');
-  expect(formattedValue).toBe('711.776.380-11');
-  expect(maskFormatter.cache.getCleanText()).toBe('71177638011');
+  maskFormatter.formatValue('a711776a38011', (maskedText, unmaskedText) => {
+    expect(maskedText).toBe('711.776.380-11');
+    expect(unmaskedText).toBe('71177638011');
+  });
 });

@@ -1,6 +1,6 @@
 export interface Cache {
-  updateCache: (result: string, cleanResult: string) => string;
-  getText: () => string;
-  getCleanText: () => string;
+  updateCache: (result: string, cleanResult: string) => void;
+  getMaskedText: () => string;
+  getUnmaskedText: () => string;
   clean: () => void;
 }
