@@ -12,6 +12,9 @@ function azMask(masks: Mask[]): AzMaskFormatter {
   const cache: Cache = azMaskCache();
 
   function formatValue(text: string, func: (text: string, unmaskedText: string) => void): void {
+    if (typeof func !== 'function') {
+      throw new TypeError('Expected a function');
+    }
     const cachedText = cache.getMaskedText();
     let result = '';
     let cleanResult = '';
