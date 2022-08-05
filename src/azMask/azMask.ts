@@ -16,8 +16,8 @@ function azMask(masks: Mask[]): AzMaskFormatter {
       throw new TypeError('Expected a function');
     }
     const cachedText = cache.getMaskedText();
-    let result = '';
-    let cleanResult = '';
+    let maskedText = '';
+    let unmaskedText = '';
     let index = 0;
     let maskIndex = 0;
 
@@ -27,35 +27,35 @@ function azMask(masks: Mask[]): AzMaskFormatter {
 
       if (mask.maskType === MaskType.REGEX) {
         if (index < cachedText.length && cachedText[index] === currentChar) {
-          result = result.concat(currentChar);
-          cleanResult = cleanResult.concat(currentChar);
+          maskedText = maskedText.concat(currentChar);
+          unmaskedText = unmaskedText.concat(currentChar);
           index += 1;
         } else {
           const validatedIndex: number | null = validateRegex(text, mask.value, index);
           if (validatedIndex !== null) {
-            result = result.concat(text[validatedIndex]);
-            cleanResult = cleanResult.concat(text[validatedIndex]);
+            maskedText = maskedText.concat(text[validatedIndex]);
+            unmaskedText = unmaskedText.concat(text[validatedIndex]);
             index = validatedIndex + 1;
           } else {
-            cache.updateCache(result, cleanResult);
-            func(result, cleanResult);
+            cache.updateCache(maskedText, unmaskedText);
+            func(maskedText, unmaskedText);
           }
         }
       } else {
         if (currentChar.toString() === mask.value) {
           if (index === text.length - 1) {
-            result = dropLast(result);
-            cache.updateCache(result, cleanResult);
-            func(result, cleanResult);
+            maskedText = dropLast(maskedText);
+            cache.updateCache(maskedText, unmaskedText);
+            func(maskedText, unmaskedText);
           }
           index += 1;
         }
-        result = result.concat(mask.value);
+        maskedText = maskedText.concat(mask.value);
       }
       maskIndex += 1;
     }
-    cache.updateCache(result, cleanResult);
-    func(result, cleanResult);
+    cache.updateCache(maskedText, unmaskedText);
+    func(maskedText, unmaskedText);
   }
   return { formatValue };
 }
