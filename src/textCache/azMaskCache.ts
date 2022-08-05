@@ -8,9 +8,15 @@ const azMaskCache = (): Cache => {
     cleanText = cleanResult;
     return text;
   };
+  const clean = (): void => {
+    text = '';
+    cleanText = '';
+  };
   const getText = () => text;
   const getCleanText = () => cleanText;
-  return { updateCache, getText, getCleanText };
+  return {
+    updateCache, getText, getCleanText, clean,
+  };
 };
 
 export default azMaskCache;

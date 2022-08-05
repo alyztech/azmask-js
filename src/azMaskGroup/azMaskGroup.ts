@@ -13,6 +13,7 @@ function azMaskGroup(masks: [Mask[]]): AzMaskFormatter {
     if (!text || cache.getText() === text) {
       return text;
     }
+    cache.clean();
     azMasks.forEach((e) => {
       const formatResult = e.formatValue(text);
       if (cache.getCleanText().length < e.cache.getCleanText().length) {

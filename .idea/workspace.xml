@@ -24,7 +24,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e921eef0-ae8c-49e8-b2ad-17c9b0a28cc3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AzMaskFormatter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/AzMaskFormatter.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/azMaskGroup/azMaskGroup.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/azMaskGroup/azMaskGroup.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/azMaskGroup/azMaskGroup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/azMaskGroup/azMaskGroup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textCache/Cache.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/textCache/Cache.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textCache/azMaskCache.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/textCache/azMaskCache.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,19 +61,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/caiomansho/Dev/alyz/react/azmask-js/src/azMaskGroup",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs.jest.jest_package": "/Users/caiomansho/Dev/alyz/react/azmask-js/node_modules/jest",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "/Users/caiomansho/Dev/alyz/react/azmask-js/node_modules/typescript/lib"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/caiomansho/Dev/alyz/react/azmask-js/src/azMaskGroup&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;/Users/caiomansho/Dev/alyz/react/azmask-js/node_modules/jest&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/caiomansho/Dev/alyz/react/azmask-js/node_modules/typescript/lib&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/azMaskGroup" />
@@ -115,7 +119,8 @@
       <workItem from="1659200949411" duration="381000" />
       <workItem from="1659201357367" duration="542000" />
       <workItem from="1659201983229" duration="1119000" />
-      <workItem from="1659242887255" duration="55195000" />
+      <workItem from="1659242887255" duration="55216000" />
+      <workItem from="1659566111845" duration="2541000" />
     </task>
     <servers />
   </component>
