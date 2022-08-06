@@ -13,6 +13,7 @@
     },
     "ignorePatterns": [],
     "rules": {
+        "no-restricted-exports": "off",
         "class-methods-use-this": "off"
     },
     "overrides": [

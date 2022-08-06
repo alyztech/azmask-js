@@ -1,6 +1,5 @@
 import validateRegex from './validateRegex';
-import MaskFactory from '../maskFactory/MaskFactory';
-import MaskFactoryType from '../maskFactory/MaskFactoryType';
+import MaskFactory, { MaskFactoryType } from '../maskFactory';
 
 test('validateRegex NUMBER works', () => {
   const text = 'abc1abc';

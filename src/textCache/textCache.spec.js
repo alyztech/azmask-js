@@ -1,4 +1,4 @@
-import azMaskCache from './azMaskCache';
+import azMaskCache from '.';
 
 test('validateRegex NUMBER works', () => {
   const text = 'abc.abc';

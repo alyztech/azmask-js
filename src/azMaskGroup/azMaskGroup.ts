@@ -1,8 +1,8 @@
 import type { AzMaskFormatter } from '../AzMaskFormatter';
 import type { Mask } from '../Mask';
-import type { Cache } from '../textCache/Cache';
+import type { Cache } from '../textCache';
 import azMask from '../azMask/azMask';
-import azMaskCache from '../textCache/azMaskCache';
+import azMaskCache from '../textCache';
 
 function azMaskGroup(masks: [Mask[]]): AzMaskFormatter {
   masks.sort((a, b) => (a.length - b.length));

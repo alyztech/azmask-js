@@ -6,6 +6,7 @@ import MaskType from '../MaskType';
  * Abstract class that creates [Mask] instances by [MaskFactoryType].
  * @author Caio Mansho
  */
+/* eslint-disable @typescript-eslint/no-use-before-define */
 abstract class MaskFactory {
   /**
      * Abstracts the creation of a [Mask].
@@ -26,7 +27,7 @@ abstract class MaskFactory {
         return new LetterMaskFactory();
       case MaskFactoryType.NUMBER:
         return new NumberMaskFactory();
-      case MaskFactoryType.ALPHANUMERIC:
+      default:
         return new AlphanumericMaskFactory();
     }
   }

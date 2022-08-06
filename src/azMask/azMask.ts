@@ -1,11 +1,11 @@
 import type { Mask } from '../Mask';
 import type { AzMaskFormatter } from '../AzMaskFormatter';
-import type { Cache } from '../textCache/Cache';
+import type { Cache } from '../textCache';
 
 import { dropLast } from '../drop';
-import validateRegex from '../validateRegex/validateRegex';
+import validateRegex from '../validateRegex';
 import MaskType from '../MaskType';
-import azMaskCache from '../textCache/azMaskCache';
+import azMaskCache from '../textCache';
 
 function azMask(masks: Mask[]): AzMaskFormatter {
   masks.sort((a: Mask, b: Mask) => a.index - b.index);

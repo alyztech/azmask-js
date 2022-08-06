@@ -23,8 +23,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e921eef0-ae8c-49e8-b2ad-17c9b0a28cc3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/azMask/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/azMask/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/azMaskGroup/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/azMaskGroup/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/maskFactory/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/maskFactory/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/textCache/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/textCache/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/validateRegex/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/validateRegex/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/azMask/azMask.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/azMask/azMask.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/azMask/azMask.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/azMask/azMask.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/azMaskGroup/azMaskGroup.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/azMaskGroup/azMaskGroup.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/azMaskGroup/azMaskGroup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/azMaskGroup/azMaskGroup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drop/drop.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/drop/drop.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drop/dropLast.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drop/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/drop/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/maskFactory/MaskFactory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/maskFactory/MaskFactory.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textCache/textCache.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/textCache/textCache.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validateRegex/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/drop/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validateRegex/validateRegex.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/validateRegex/validateRegex.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +69,29 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feat/examples" />
+                    <option name="lastUsedInstant" value="1659764500" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1659764499" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="JupyterTrust" id="4d9b7b89-32a3-48c7-9498-3f779eb14228" />
   <component name="MarkdownSettingsMigration">
@@ -57,28 +105,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/caiomansho/Dev/alyz/react/azmask-js/src/azMaskGroup&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs.jest.jest_package&quot;: &quot;/Users/caiomansho/Dev/alyz/react/azmask-js/node_modules/jest&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/caiomansho/Dev/alyz/react/azmask-js/node_modules/typescript/lib&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/caiomansho/Dev/alyz/react/azmask-js/src/azMask",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "/Users/caiomansho/Dev/alyz/react/azmask-js/node_modules/jest",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "/Users/caiomansho/Dev/alyz/react/azmask-js/node_modules/typescript/lib"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/azMask" />
       <recent name="$PROJECT_DIR$/src/azMaskGroup" />
-      <recent name="$PROJECT_DIR$/src/test" />
+      <recent name="$PROJECT_DIR$/src/drop" />
       <recent name="$PROJECT_DIR$/src/maskFactory" />
       <recent name="$PROJECT_DIR$/src/textCache" />
-      <recent name="$PROJECT_DIR$/src/validateRegex" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/drop" />
       <recent name="$PROJECT_DIR$/src/azmask" />
       <recent name="$PROJECT_DIR$/src/textCache" />
       <recent name="$PROJECT_DIR$/src/validateRegex" />
@@ -116,7 +165,8 @@
       <workItem from="1659201357367" duration="542000" />
       <workItem from="1659201983229" duration="1119000" />
       <workItem from="1659242887255" duration="55216000" />
-      <workItem from="1659566111845" duration="7263000" />
+      <workItem from="1659566111845" duration="10766000" />
+      <workItem from="1659825979927" duration="3206000" />
     </task>
     <servers />
   </component>
