@@ -7,7 +7,7 @@ class MaskFactory {
                 return new LetterMaskFactory();
             case MaskFactoryType.NUMBER:
                 return new NumberMaskFactory();
-            case MaskFactoryType.ALPHANUMERIC:
+            default:
                 return new AlphanumericMaskFactory();
         }
     }

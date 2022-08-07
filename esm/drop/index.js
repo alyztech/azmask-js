@@ -1,4 +1,2 @@
-import drop from './drop';
-export default drop;
-export { default as dropLast } from './dropLast';
+export { default, dropLast } from './drop';
 //# sourceMappingURL=index.js.map

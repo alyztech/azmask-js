@@ -1,10 +1,12 @@
 import React, {useState, ChangeEvent} from 'react';
-import azMask from "@alyz.tech/azmask/src/azMask/azMask";
+import azMask from "@alyz.tech/azmask";
 import logo from './logo.svg';
 import './App.css';
-import MaskFactory from "@alyz.tech/azmask/src/maskFactory/";
-import MaskFactoryType from "@alyz.tech/azmask/src/maskFactory/MaskFactoryType";
-import MaskType from "@alyz.tech/azmask/src/MaskType";
+import {MaskFactory} from "@alyz.tech/azmask";
+import {MaskFactoryType} from "@alyz.tech/azmask";
+import {MaskType} from "@alyz.tech/azmask";
+
+// @ts-ignore
 const maskFactory = MaskFactory.getMaskFactory(MaskFactoryType.NUMBER);
 
 function App() {

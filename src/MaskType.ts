@@ -1,9 +1,9 @@
 /** Type of the mask char */
-const enum MaskType {
+const MaskType = {
   /** Add a fixed value */
-  FIXED = 'FIXED',
+  FIXED: 'FIXED',
   /**  Do a regex validation, if true returns the value */
-  REGEX = 'REGEX',
-}
+  REGEX: 'REGEX',
+};
 
 export default MaskType;

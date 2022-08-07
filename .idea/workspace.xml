@@ -23,33 +23,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e921eef0-ae8c-49e8-b2ad-17c9b0a28cc3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/azMask/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/azMask/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/azMaskGroup/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/azMaskGroup/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/maskFactory/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/maskFactory/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/textCache/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/textCache/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validateRegex/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validateRegex/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/azMask/azMask.js" beforeDir="false" afterPath="$PROJECT_DIR$/esm/azMask/azMask.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/azMask/azMask.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/esm/azMask/azMask.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/azMask/azMask.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/esm/azMask/azMask.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/azMask/azMask.spec.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/esm/azMask/azMask.spec.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/azMaskGroup/azMaskGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/esm/azMaskGroup/azMaskGroup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/azMaskGroup/azMaskGroup.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/esm/azMaskGroup/azMaskGroup.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/azMaskGroup/azMaskGroup.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/esm/azMaskGroup/azMaskGroup.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/azMaskGroup/azMaskGroup.spec.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/esm/azMaskGroup/azMaskGroup.spec.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/drop/drop.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/esm/drop/drop.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/drop/drop.d.ts.map" beforeDir="false" afterPath="$PROJECT_DIR$/esm/drop/drop.d.ts.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/drop/drop.js" beforeDir="false" afterPath="$PROJECT_DIR$/esm/drop/drop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/drop/drop.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/esm/drop/drop.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/drop/dropLast.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/drop/dropLast.d.ts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/drop/dropLast.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/drop/dropLast.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/drop/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/esm/drop/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/drop/index.d.ts.map" beforeDir="false" afterPath="$PROJECT_DIR$/esm/drop/index.d.ts.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/drop/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/esm/drop/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/drop/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/esm/drop/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/maskFactory/MaskFactory.d.ts.map" beforeDir="false" afterPath="$PROJECT_DIR$/esm/maskFactory/MaskFactory.d.ts.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/maskFactory/MaskFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/esm/maskFactory/MaskFactory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/maskFactory/MaskFactory.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/esm/maskFactory/MaskFactory.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/textCache/textCache.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/esm/textCache/textCache.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/textCache/textCache.spec.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/esm/textCache/textCache.spec.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/validateRegex/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/esm/validateRegex/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/validateRegex/index.d.ts.map" beforeDir="false" afterPath="$PROJECT_DIR$/esm/validateRegex/index.d.ts.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/validateRegex/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/esm/validateRegex/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/validateRegex/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/esm/validateRegex/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/validateRegex/validateRegex.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/esm/validateRegex/validateRegex.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/esm/validateRegex/validateRegex.spec.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/esm/validateRegex/validateRegex.spec.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/azMask/azMask.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/azMask/azMask.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/azMask/azMask.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/azMask/azMask.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/azMaskGroup/azMaskGroup.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/azMaskGroup/azMaskGroup.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/azMaskGroup/azMaskGroup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/azMaskGroup/azMaskGroup.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drop/drop.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/drop/drop.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drop/dropLast.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/drop/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/drop/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mask.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mask.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MaskType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/MaskType.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/maskFactory/MaskFactory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/maskFactory/MaskFactory.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/textCache/textCache.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/textCache/textCache.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/validateRegex/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/drop/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/validateRegex/validateRegex.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/validateRegex/validateRegex.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/maskFactory/MaskFactoryType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/maskFactory/MaskFactoryType.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +123,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/caiomansho/Dev/alyz/react/azmask-js/src/azMask",
+    "last_opened_file_path": "/Users/caiomansho/Dev/alyz/react/azmask-js/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -120,11 +135,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/azMask" />
       <recent name="$PROJECT_DIR$/src/azMaskGroup" />
       <recent name="$PROJECT_DIR$/src/drop" />
       <recent name="$PROJECT_DIR$/src/maskFactory" />
-      <recent name="$PROJECT_DIR$/src/textCache" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/drop" />
@@ -166,7 +181,7 @@
       <workItem from="1659201983229" duration="1119000" />
       <workItem from="1659242887255" duration="55216000" />
       <workItem from="1659566111845" duration="10766000" />
-      <workItem from="1659825979927" duration="3206000" />
+      <workItem from="1659825979927" duration="7132000" />
     </task>
     <servers />
   </component>

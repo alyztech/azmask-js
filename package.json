@@ -5,8 +5,8 @@
   "author": "Caio Mansho",
   "license": "MIT",
   "scripts": {
-    "test": "NODE_ENV=test jest",
-    "docs": "typedoc src/index.ts --out docs --listInvalidSymbolLinks --includes tutorials --theme pages-plugin --includeVersion",
+    "test": "NODE_ENV=test jest src/",
+    "docs": "typedoc src/index.d.ts --out docs --listInvalidSymbolLinks --includes tutorials --theme pages-plugin --includeVersion",
     "compile": "yarn compile:esm && yarn compile:cjs",
     "compile:esm": "rm -rf esm && tsc && node ./build-scripts/compile.esm.after.mjs",
     "compile:cjs": "rm -rf dist && tsc --project tsconfig.cjs.json && node ./build-scripts/compile.cjs.after.mjs",

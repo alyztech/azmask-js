@@ -1,6 +1,5 @@
-import azMaskGroup from './azMaskGroup';
-import MaskFactory from '../maskFactory/MaskFactory';
-import MaskFactoryType from '../maskFactory/MaskFactoryType';
+import azMaskGroup from '.';
+import MaskFactory, { MaskFactoryType } from '../maskFactory';
 import MaskType from '../MaskType';
 test('AzMaskGroup works', () => {
     const maskFactory = MaskFactory.getMaskFactory(MaskFactoryType.NUMBER);

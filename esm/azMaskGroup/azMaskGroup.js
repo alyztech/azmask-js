@@ -1,5 +1,5 @@
 import azMask from '../azMask/azMask';
-import azMaskCache from '../textCache/azMaskCache';
+import azMaskCache from '../textCache';
 function azMaskGroup(masks) {
     masks.sort((a, b) => (a.length - b.length));
     const azMasks = masks.map((e) => azMask(e));

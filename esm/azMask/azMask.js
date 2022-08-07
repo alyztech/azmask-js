@@ -1,7 +1,7 @@
 import { dropLast } from '../drop';
-import validateRegex from '../validateRegex/validateRegex';
+import validateRegex from '../validateRegex';
 import MaskType from '../MaskType';
-import azMaskCache from '../textCache/azMaskCache';
+import azMaskCache from '../textCache';
 function azMask(masks) {
     masks.sort((a, b) => a.index - b.index);
     const cache = azMaskCache();

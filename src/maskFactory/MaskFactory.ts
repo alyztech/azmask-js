@@ -21,7 +21,7 @@ abstract class MaskFactory {
      * @param maskFactoryType with the type of the [Mask] to be created.
      * @return [MaskFactory] implementation of the [Mask] creation.
      */
-  static getMaskFactory(maskFactoryType: MaskFactoryType): MaskFactory {
+  static getMaskFactory(maskFactoryType: string): MaskFactory {
     switch (maskFactoryType) {
       case MaskFactoryType.LETTER:
         return new LetterMaskFactory();
