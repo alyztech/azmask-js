@@ -1,33 +1,36 @@
-import type { AzMaskFormatter } from '../AzMaskFormatter';
-import type { Mask } from '../Mask';
-import type { Cache } from '../textCache';
-import azMask from '../azMask/azMask';
-import azMaskCache from '../textCache';
+import type { AzMaskFormatter } from '../AzMaskFormatter'
+import type { Mask } from '../Mask'
+import type { Cache } from '../textCache'
+import azMask from '../azMask/azMask'
+import azMaskCache from '../textCache'
 
-function azMaskGroup(masks: [Mask[]]): AzMaskFormatter {
-  masks.sort((a, b) => (a.length - b.length));
-  const azMasks: AzMaskFormatter[] = masks.map((e: Mask[]) => azMask(e));
-  const cache: Cache = azMaskCache();
+function azMaskGroup(masks: Array<Mask[]>): AzMaskFormatter {
+  const azMasks: AzMaskFormatter[] = masks.map((e: Mask[]) => azMask(e))
+  const cache: Cache = azMaskCache()
 
-  function formatValue(text: string, func: (text: string, unmaskedText: string) => void): void {
+  function formatValue(
+    text: string,
+    func: (text: string, unmaskedText: string) => void
+  ): void {
     if (typeof func !== 'function') {
-      throw new TypeError('Expected a function');
+      throw new TypeError('Expected a function')
     }
+    console.log(text)
     if (!text || cache.getMaskedText() === text) {
-      func(text, cache.getUnmaskedText());
-      return;
+      func(text, cache.getUnmaskedText())
+      return
     }
-    cache.clean();
+    cache.clean()
     azMasks.forEach((e) => {
       e.formatValue(text, (maskedText, unmaskedText) => {
         if (cache.getUnmaskedText().length < unmaskedText.length) {
-          cache.updateCache(maskedText, unmaskedText);
+          cache.updateCache(maskedText, unmaskedText)
         }
-      });
-    });
-    func(cache.getMaskedText(), cache.getUnmaskedText());
+      })
+    })
+    func(cache.getMaskedText(), cache.getUnmaskedText())
   }
-  return { formatValue };
+  return { formatValue }
 }
 
-export default azMaskGroup;
+export default azMaskGroup

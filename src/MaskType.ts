@@ -4,6 +4,6 @@ const MaskType = {
   FIXED: 'FIXED',
   /**  Do a regex validation, if true returns the value */
   REGEX: 'REGEX',
-};
+}
 
-export default MaskType;
+export default MaskType

@@ -1,49 +1,107 @@
 import React, {useState, ChangeEvent} from 'react';
-import azMask from "@alyz.tech/azmask";
+import azMask, {azMaskGroup, MaskFactory, MaskFactoryType, MaskType} from "@alyz.tech/azmask";
 import logo from './logo.svg';
 import './App.css';
-import {MaskFactory} from "@alyz.tech/azmask";
-import {MaskFactoryType} from "@alyz.tech/azmask";
-import {MaskType} from "@alyz.tech/azmask";
 
-// @ts-ignore
 const maskFactory = MaskFactory.getMaskFactory(MaskFactoryType.NUMBER);
+
+const cpfMask = azMask([
+  maskFactory.createMask(),
+  maskFactory.createMask(),
+  maskFactory.createMask(),
+  {
+    maskType: MaskType.FIXED,
+    value: '.',
+  },
+  maskFactory.createMask(),
+  maskFactory.createMask(),
+  maskFactory.createMask(),
+  {
+    maskType: MaskType.FIXED,
+    value: '.',
+  },
+  maskFactory.createMask(),
+  maskFactory.createMask(),
+  maskFactory.createMask(),
+  {
+    maskType: MaskType.FIXED,
+    value: '-',
+  },
+  maskFactory.createMask(),
+  maskFactory.createMask(),
+])
+
+const cnpjMasks = azMaskGroup([[
+  maskFactory.createMask(),
+  maskFactory.createMask(),
+  maskFactory.createMask(),
+  {
+    maskType: MaskType.FIXED,
+    value: '.',
+  },
+  maskFactory.createMask(),
+  maskFactory.createMask(),
+  maskFactory.createMask(),
+  {
+    maskType: MaskType.FIXED,
+    value: '.',
+  },
+  maskFactory.createMask(),
+  maskFactory.createMask(),
+  maskFactory.createMask(),
+  {
+    maskType: MaskType.FIXED,
+    value: '-',
+  },
+  maskFactory.createMask(),
+  maskFactory.createMask(),
+], [
+  maskFactory.createMask(),
+  maskFactory.createMask(),
+  {
+    maskType: MaskType.FIXED,
+    value: '.',
+  },
+  maskFactory.createMask(),
+  maskFactory.createMask(),
+  maskFactory.createMask(),
+  {
+    maskType: MaskType.FIXED,
+    value: '.',
+  },
+  maskFactory.createMask(),
+  maskFactory.createMask(),
+  maskFactory.createMask(),
+  {
+    maskType: MaskType.FIXED,
+    value: '/',
+  },
+  maskFactory.createMask(),
+  maskFactory.createMask(),
+  maskFactory.createMask(),
+  maskFactory.createMask(),
+  {
+    maskType: MaskType.FIXED,
+    value: '-',
+  },
+  maskFactory.createMask(),
+  maskFactory.createMask(),
+]])
 
 function App() {
 
   const [cpf, setCpf] = useState('')
-  const cpfMask = azMask([
-    maskFactory.createMask(0),
-    maskFactory.createMask(1),
-    maskFactory.createMask(2),
-    {
-      maskType: MaskType.FIXED,
-      value: '.',
-      index: 3,
-    },
-    maskFactory.createMask(4),
-    maskFactory.createMask(5),
-    maskFactory.createMask(6),
-    {
-      maskType: MaskType.FIXED,
-      value: '.',
-      index: 7,
-    },
-    maskFactory.createMask(8),
-    maskFactory.createMask(9),
-    maskFactory.createMask(10),
-    {
-      maskType: MaskType.FIXED,
-      value: '-',
-      index: 11,
-    },
-    maskFactory.createMask(12),
-    maskFactory.createMask(13),
-  ])
+  const [cpfOrCnpj, setCpfOrCnpj] = useState('')
 
   const handleCpfChange =(e: ChangeEvent<HTMLInputElement>) => {
-    cpfMask.formatValue(e.target.value, (masked, unmaked) => {
+    cpfMask.formatValue(e.target.value, (masked: string, unmaked: string) => {
       setCpf(masked);
+    })
+  }
+
+  const handleCpfOrCnpjChange =(e: ChangeEvent<HTMLInputElement>) => {
+    cnpjMasks.formatValue(e.target.value, (masked: string, unmaked: string) => {
+      setCpfOrCnpj(masked);
     })
   }
 
@@ -55,6 +113,7 @@ function App() {
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <input type="text" value={cpf} onChange={handleCpfChange} />
+        <input type="text" value={cpfOrCnpj} onChange={handleCpfOrCnpjChange} />
       </header>
     </div>
   );
