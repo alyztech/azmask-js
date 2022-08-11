@@ -1,66 +1,65 @@
 import azMaskGroup from '.'
-import MaskFactory, { MaskFactoryType } from '../maskFactory'
+import { createNumberMask } from '../maskFactory'
 import MaskType from '../MaskType'
 
 test('AzMaskGroup works', () => {
-  const maskFactory = MaskFactory.getMaskFactory(MaskFactoryType.NUMBER)
   const cpfMasks = [
-    maskFactory.createMask(),
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
+    createNumberMask(),
     {
       maskType: MaskType.FIXED,
       value: '.',
     },
-    maskFactory.createMask(),
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
+    createNumberMask(),
     {
       maskType: MaskType.FIXED,
       value: '.',
     },
-    maskFactory.createMask(),
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
+    createNumberMask(),
     {
       maskType: MaskType.FIXED,
       value: '-',
     },
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
   ]
 
   const cnpjMasks = [
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
     {
       maskType: MaskType.FIXED,
       value: '.',
     },
-    maskFactory.createMask(),
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
+    createNumberMask(),
     {
       maskType: MaskType.FIXED,
       value: '.',
     },
-    maskFactory.createMask(),
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
+    createNumberMask(),
     {
       maskType: MaskType.FIXED,
       value: '/',
     },
-    maskFactory.createMask(),
-    maskFactory.createMask(),
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
+    createNumberMask(),
+    createNumberMask(),
     {
       maskType: MaskType.FIXED,
       value: '-',
     },
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
   ]
 
   const maskFormatter = azMaskGroup([cpfMasks, cnpjMasks])

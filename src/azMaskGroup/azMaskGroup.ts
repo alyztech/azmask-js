@@ -15,7 +15,6 @@ function azMaskGroup(masks: Array<Mask[]>): AzMaskFormatter {
     if (typeof func !== 'function') {
       throw new TypeError('Expected a function')
     }
-    console.log(text)
     if (!text || cache.getMaskedText() === text) {
       func(text, cache.getUnmaskedText())
       return

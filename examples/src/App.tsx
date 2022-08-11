@@ -1,91 +1,68 @@
 import React, {useState, ChangeEvent} from 'react';
-import azMask, {azMaskGroup, MaskFactory, MaskFactoryType, MaskType} from "@alyz.tech/azmask";
-import logo from './logo.svg';
+import azMask, {azMaskGroup, MaskType,  createMasks, createNumberMask} from "@alyz.tech/azmask";
 import './App.css';
 
-const maskFactory = MaskFactory.getMaskFactory(MaskFactoryType.NUMBER);
+console.log("cpfMask", createNumberMask())
+console.log("cpfMask", createMasks(3, createNumberMask))
 
 const cpfMask = azMask([
-  maskFactory.createMask(),
-  maskFactory.createMask(),
-  maskFactory.createMask(),
+  ...createMasks(3, createNumberMask),
   {
     maskType: MaskType.FIXED,
     value: '.',
   },
-  maskFactory.createMask(),
-  maskFactory.createMask(),
-  maskFactory.createMask(),
+  ...createMasks(3, createNumberMask),
   {
     maskType: MaskType.FIXED,
     value: '.',
   },
-  maskFactory.createMask(),
-  maskFactory.createMask(),
-  maskFactory.createMask(),
+  ...createMasks(3, createNumberMask),
   {
     maskType: MaskType.FIXED,
     value: '-',
   },
-  maskFactory.createMask(),
-  maskFactory.createMask(),
+  ...createMasks(2, createNumberMask),
 ])
 
 const cnpjMasks = azMaskGroup([[
-  maskFactory.createMask(),
-  maskFactory.createMask(),
-  maskFactory.createMask(),
+  ...createMasks(3, createNumberMask),
   {
     maskType: MaskType.FIXED,
     value: '.',
   },
-  maskFactory.createMask(),
-  maskFactory.createMask(),
-  maskFactory.createMask(),
+  ...createMasks(3, createNumberMask),
   {
     maskType: MaskType.FIXED,
     value: '.',
   },
-  maskFactory.createMask(),
-  maskFactory.createMask(),
-  maskFactory.createMask(),
+  ...createMasks(3, createNumberMask),
   {
     maskType: MaskType.FIXED,
     value: '-',
   },
-  maskFactory.createMask(),
-  maskFactory.createMask(),
+  ...createMasks(2, createNumberMask),
 ], [
-  maskFactory.createMask(),
-  maskFactory.createMask(),
+  ...createMasks(2, createNumberMask),
   {
     maskType: MaskType.FIXED,
     value: '.',
   },
-  maskFactory.createMask(),
-  maskFactory.createMask(),
-  maskFactory.createMask(),
+  ...createMasks(3, createNumberMask),
   {
     maskType: MaskType.FIXED,
     value: '.',
   },
-  maskFactory.createMask(),
-  maskFactory.createMask(),
-  maskFactory.createMask(),
+  ...createMasks(3, createNumberMask),
   {
     maskType: MaskType.FIXED,
     value: '/',
   },
-  maskFactory.createMask(),
-  maskFactory.createMask(),
-  maskFactory.createMask(),
-  maskFactory.createMask(),
+  ...createMasks(3, createNumberMask),
   {
     maskType: MaskType.FIXED,
     value: '-',
   },
-  maskFactory.createMask(),
-  maskFactory.createMask(),
+  ...createMasks(2, createNumberMask),
 ]])
 
 function App() {
@@ -108,10 +85,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
         <input type="text" value={cpf} onChange={handleCpfChange} />
         <input type="text" value={cpfOrCnpj} onChange={handleCpfOrCnpjChange} />
       </header>

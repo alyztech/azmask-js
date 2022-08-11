@@ -1,33 +1,32 @@
 import azMask from './azMask'
-import MaskFactory, { MaskFactoryType } from '../maskFactory'
+import { createNumberMask } from '../maskFactory'
 import MaskType from '../MaskType'
 
 test('AzMask CPF works', () => {
-  const maskFactory = MaskFactory.getMaskFactory(MaskFactoryType.NUMBER)
   const masks = [
-    maskFactory.createMask(),
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
+    createNumberMask(),
     {
       maskType: MaskType.FIXED,
       value: '.',
     },
-    maskFactory.createMask(),
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
+    createNumberMask(),
     {
       maskType: MaskType.FIXED,
       value: '.',
     },
-    maskFactory.createMask(),
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
+    createNumberMask(),
     {
       maskType: MaskType.FIXED,
       value: '-',
     },
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
   ]
   const maskFormatter = azMask(masks)
   maskFormatter.formatValue('34775332830', (maskedText, unmaskedText) => {
@@ -37,39 +36,38 @@ test('AzMask CPF works', () => {
 })
 
 test('AzMask CNPJ works', () => {
-  const maskFactory = MaskFactory.getMaskFactory(MaskFactoryType.NUMBER)
 
   const masks = [
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
     {
       maskType: MaskType.FIXED,
       value: '.',
     },
-    maskFactory.createMask(),
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
+    createNumberMask(),
     {
       maskType: MaskType.FIXED,
       value: '.',
     },
-    maskFactory.createMask(),
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
+    createNumberMask(),
     {
       maskType: MaskType.FIXED,
       value: '/',
     },
-    maskFactory.createMask(),
-    maskFactory.createMask(),
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
+    createNumberMask(),
+    createNumberMask(),
     {
       maskType: MaskType.FIXED,
       value: '-',
     },
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
   ]
 
   const maskFormatter = azMask(masks)
@@ -83,31 +81,30 @@ test('AzMask CNPJ works', () => {
 })
 
 test('AzMask CPF works', () => {
-  const maskFactory = MaskFactory.getMaskFactory(MaskFactoryType.NUMBER)
   const masks = [
-    maskFactory.createMask(),
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
+    createNumberMask(),
     {
       maskType: MaskType.FIXED,
       value: '.',
     },
-    maskFactory.createMask(),
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
+    createNumberMask(),
     {
       maskType: MaskType.FIXED,
       value: '.',
     },
-    maskFactory.createMask(),
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
+    createNumberMask(),
     {
       maskType: MaskType.FIXED,
       value: '-',
     },
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
   ]
   const maskFormatter = azMask(masks)
   maskFormatter.formatValue('34775332830', (maskedText, unmaskedText) => {
@@ -117,39 +114,38 @@ test('AzMask CPF works', () => {
 })
 
 test('AzMask delete fixed works', () => {
-  const maskFactory = MaskFactory.getMaskFactory(MaskFactoryType.NUMBER)
 
   const masks = [
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
     {
       maskType: MaskType.FIXED,
       value: '.',
     },
-    maskFactory.createMask(),
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
+    createNumberMask(),
     {
       maskType: MaskType.FIXED,
       value: '.',
     },
-    maskFactory.createMask(),
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
+    createNumberMask(),
     {
       maskType: MaskType.FIXED,
       value: '/',
     },
-    maskFactory.createMask(),
-    maskFactory.createMask(),
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
+    createNumberMask(),
+    createNumberMask(),
     {
       maskType: MaskType.FIXED,
       value: '-',
     },
-    maskFactory.createMask(),
-    maskFactory.createMask(),
+    createNumberMask(),
+    createNumberMask(),
   ]
 
   const maskFormatter = azMask(masks)
